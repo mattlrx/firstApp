@@ -23,6 +23,7 @@ def index(request):
     context = {'latest_question_list': latest_question_list}
     return render(request, 'polls/index.html', context)
 
+
 def detail(request, question_id):
     return HttpResponse("You are looking at question %s." % question_id)
 
